@@ -1,0 +1,32 @@
+#exercise 1
+a <- matrix(data=c(1:4),2,2, TRUE)
+a
+
+#exercise 2
+values <- sample (c(1:1000),100, replace = FALSE)
+values
+
+#exercise 3
+G <- matrix (c(values),10,10, TRUE)
+G
+
+#exercise 4
+#4.1
+H <- t(G)
+H
+
+#4.2
+J <- G + H
+J
+
+#4.3
+det(G)
+det(H)
+det(J)
+
+#4.4
+K<- cbind(G[,(1:5)], J[,(1:5)])
+K
+
+#4.5 
+G %% solve(G)
